@@ -3,10 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        />
         <link rel="stylesheet" href="./src/output.css" />
         <title>Document</title>
     </head>
-    <body class="font-sans">
+    <body class="font-[poppins]">
         <header class="bg-[#0171f9] pt-10 px-[7.4rem]">
             <nav class="flex justify-between items-center">
                 <div>
@@ -44,14 +48,14 @@
                     <li>
                         <a
                             href="#"
-                            class="text-[#a2f1ff] bg-[#ee6269] p-4 rounded-3xl"
+                            class="text-[#a2f1ff] bg-[#e15f63] px-5 py-2 font-medium text-[1rem] rounded-3xl"
                             >SIGN IN</a
                         >
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="bg-[#0171f9] pt-[7rem] px-[7.4rem]">
+        <main class="bg-[#0171f9] pt-[8.3rem] px-[7.4rem]">
             <div class="flex justify-evenly gap-1">
                 <div class="w-[50%]">
                     <h6
@@ -60,24 +64,64 @@
                         Welcome to lugx
                     </h6>
                     <h2
-                        class="text-[#f7fdff] text-5xl text-wrap mb-14 font-extrabold font-sans after:content-['*']"
+                        class="text-[#f7fdff] text-5xl mb-14 font-extrabold font-sans relative inline-block after:content-[url('/image.png')] after:ml-2 after:align-middle"
                     >
                         BEST GAMING SITE EVER!
                     </h2>
-                    <p class="text-[#f7fdff] text-[1.1rem]">
+                    <p class="text-[#f7fdff] text-[14px] text-base/8">
                         LUGX Gaming is free Bootstrap 5 HTML CSS website
                         template for your gaming websites. You can download and
                         use this layout for commercial purposes. Please tell
                         your friends about TemplateMo.
                     </p>
-                    <div></div>
+                    <form
+                        action=""
+                        id="search"
+                        class="relative mt-[3rem] rounded-4xl bg-white w-[81%] px-6 py-3"
+                    >
+                        <input
+                            type="text"
+                            class=""
+                            placeholder="Type Something"
+                        />
+                        <button
+                            role="button"
+                            class="bg-[#ed636b] absolute right-0 top-0 bottom-0 px-6 rounded-4xl uppercase text-white"
+                        >
+                            Search Now
+                        </button>
+                    </form>
                 </div>
-                <div class="w-[50%] flex justify-end">
+                <!--<div class="w-[50%] flex justify-end relative">
                     <img
                         src="./src/static/banner-image.jpg"
                         alt=""
-                        class="object-cover"
+                        width="65%"
+                        class="overflow-hidden rounded-3xl relative"
                     />
+                    <span
+                        class="absolute top-5 right-5 bg-[#008af8] text-white py-1 px-[15px] rounded-[25px] font-bold text-[24px]"
+                        >$22</span
+                    >
+                    <span class="absolute left-25 bg-red-700">40%</span>
+                </div>-->
+                <div class="relative w-[50%] flex justify-end">
+                    <img
+                        src="./src/static/banner-image.jpg"
+                        alt=""
+                        width="65%"
+                        class="overflow-hidden rounded-3xl"
+                    />
+                    <span
+                        class="absolute top-5 right-5 bg-[#008af8] text-white py-1 px-[15px] rounded-[25px] font-bold text-[24px]"
+                    >
+                        $22
+                    </span>
+                    <span
+                        class="absolute bottom-0 left-0 bg-red-700 text-white py-1 px-3 rounded font-bold"
+                    >
+                        40%
+                    </span>
                 </div>
             </div>
         </main>
